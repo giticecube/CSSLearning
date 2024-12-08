@@ -9,6 +9,7 @@ const count = ref(0)
 </script>
 
 <template>
+  <div class="total">
   <h1>{{ msg }}</h1>
 
   <div class="card">
@@ -34,10 +35,18 @@ const count = ref(0)
     >.
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  </div>
 </template>
 
 <style scoped>
 .read-the-docs {
   color: #888;
 }
+.total{
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
 </style>
